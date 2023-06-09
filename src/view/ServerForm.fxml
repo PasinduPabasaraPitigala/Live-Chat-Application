@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.9" prefHeight="655.0" prefWidth="691.0" style="-fx-background-color: #606C5D;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.server.ServerFormController">
+   <children>
+      <TextField fx:id="txtMsgInput" layoutX="20.0" layoutY="606.0" prefHeight="35.0" prefWidth="510.0" promptText="Type Here">
+         <padding>
+            <Insets left="10.0" right="45.0" />
+         </padding>
+      </TextField>
+      <JFXButton layoutX="540.0" layoutY="606.0" onAction="#btnSend" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #419eab;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="605.0" prefHeight="35.0" prefWidth="45.0" text="📷" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TextArea fx:id="txtMsgDisplay" layoutX="20.0" layoutY="77.0" prefHeight="514.0" prefWidth="653.0" />
+      <AnchorPane prefHeight="59.0" prefWidth="691.0" style="-fx-background-color: cyan;">
+         <children>
+            <Label layoutX="7.0" layoutY="7.0" prefHeight="45.0" prefWidth="166.0" text="Server" wrapText="true">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="Courier New Bold" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="636.0" layoutY="12.0" onAction="#btnClose" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50px;" text="❌" textFill="RED">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="581.0" layoutY="4.0" onAction="#btnMinimize" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50px;" text="-" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

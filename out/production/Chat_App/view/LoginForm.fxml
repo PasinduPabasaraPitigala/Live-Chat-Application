@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logingPane" maxHeight="769.0" maxWidth="691.0" minHeight="655.0" minWidth="443.0" opacity="0.83" prefHeight="655.0" prefWidth="691.0" style="-fx-background-radius: 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="655.0" fitWidth="691.0" opacity="0.37">
+         <image>
+            <Image url="@../assets/img/girl.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtLoginName" alignment="CENTER" focusColor="BLACK" labelFloat="true" layoutX="153.0" layoutY="283.0" prefHeight="45.0" prefWidth="385.0" promptText="Type Here User Name...">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="165.0" layoutY="392.0" onAction="#btnLogin" prefHeight="66.0" prefWidth="361.0" ripplerFill="#0d00ff" style="-fx-background-color: #419eab;" text="Log In" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Courier New Bold Italic" size="29.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="219.0" layoutY="569.0" prefHeight="29.0" prefWidth="269.0" text="Connect with world..." textAlignment="CENTER">
+         <font>
+            <Font name="Constantia Italic" size="25.0" />
+         </font></Label>
+      <AnchorPane prefHeight="66.0" prefWidth="691.0" style="-fx-background-color: cyan;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" prefHeight="50.0" prefWidth="138.0" text="Chat Room" wrapText="true">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="Courier New Bold" size="19.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="582.0" layoutY="4.0" onAction="#btnMinimize" prefHeight="51.0" prefWidth="43.0" style="-fx-background-radius: 50px;" text="-" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="637.0" layoutY="11.0" onAction="#btnClose" prefHeight="45.0" prefWidth="54.0" style="-fx-background-radius: 50px;" text="❌" textFill="RED">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
